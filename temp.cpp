@@ -11,7 +11,7 @@ using namespace std;
 
 int n,map_index;    //方程式的个数N,map的下标
 string input;
-unordered_map<string,int> mp[2]; //两个map
+unordered_map<string,int> mp[2]; 
 
 void deal_part(string part);
 void deal_expr(string expr);
@@ -37,7 +37,7 @@ void deal_part(string part)
 	split(part,vec,'+');
 	for(string &expr:vec)
 	    deal_expr(expr);
-}
+
 
 void deal_expr(string expr)
 {
