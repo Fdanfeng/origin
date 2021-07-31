@@ -29,17 +29,7 @@ void split(string &str,vector<string> &vec,char flag)
 	}
 }
 
-void deal_input(string input)
-{
-	vector<string> vec;
-	split(input,vec,'=');
-	//处理左半部分
-	map_index=0;
-	deal_part(vec[0]);
-	//处理右半部分
-	map_index=1;
-	deal_part(vec[1]); 
-}
+
 
 void deal_part(string part)
 {
